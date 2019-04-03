@@ -25,6 +25,12 @@
                                     <navigationItem title="Stop Watch" id="ai0-vw-XXk"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbH-b8-iT6">
+                                <rect key="frame" x="86.5" y="281" width="202.5" height="105.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="88"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUo-Nr-jiP">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -48,12 +54,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbH-b8-iT6">
-                                <rect key="frame" x="86.5" y="281" width="202.5" height="105.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="88"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -63,6 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pauseButton" destination="Vrf-4t-e02" id="pw7-Zc-L2m"/>
+                        <outlet property="startButton" destination="Gj2-T3-hLy" id="gl0-D1-XWW"/>
+                        <outlet property="stopButton" destination="tzJ-ES-ahR" id="HNA-Lg-3el"/>
                         <outlet property="timeLabel" destination="GbH-b8-iT6" id="eqg-s9-31D"/>
                     </connections>
                 </viewController>
